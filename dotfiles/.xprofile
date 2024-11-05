@@ -1,0 +1,15 @@
+#feh --bg-scale /home/murat/.backgroundimages/sapan-patel-gmgWd0CgWQI-unsplash.jpg &
+
+#feh --bg-scale --randomize /home/murat/.backgroundimages/* & while true; do sleep 10; feh --bg-scale --randomize /home/murat/.backgroundimages/*; done
+
+#!/bin/bash
+
+# Belirtilen klasördeki resimleri rastgele arka plana ayarlayın
+feh --bg-scale --randomize /home/murat/.backgroundimages/*
+
+# Sonsuz döngü içinde 10 saniyede bir arka planı değiştirin
+(while true; do
+    sleep 10
+    feh --bg-scale --randomize /home/murat/.backgroundimages/*
+done) &
+
